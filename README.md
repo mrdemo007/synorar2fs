@@ -18,7 +18,7 @@ docker run \
   --cap-add SYS_ADMIN \
   --device /dev/fuse \
   -v <path/to/rar/files>:/source \
-  -v <path/to/empty/folder>:/destination \
+  -v <path/to/empty/folder>:/nomorerar \
   mrdemo007/synorar2fs
 ```
 

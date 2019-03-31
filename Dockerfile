@@ -48,4 +48,4 @@ STOPSIGNAL SIGQUIT
 
 ENTRYPOINT [ "rar2fs" ]
 
-CMD [ "-f", "-o", "allow_other", "-o", "auto_unmount", "--seek-length=1", "/source", "/destination" ]
+CMD [ "-f", "-o", "allow_other", "-o", "auto_unmount", "--seek-length=1", "/source", "/nomorerar" ]

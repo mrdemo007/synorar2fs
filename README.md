@@ -19,7 +19,7 @@ docker run \
   --device /dev/fuse \
   -v <path/to/rar/files>:/source \
   -v <path/to/empty/folder>:/nomorerar \
-  mrdemo007/synorar2fs
+  jonasandren/synorar2fs
 ```
 
 ## Config
@@ -28,7 +28,7 @@ To get a list of all config options for `rar2fs` run the following
 command.
 
 ```sh
-docker run --rm mrdemo007/synorar2fs --help
+docker run --rm jonasandren/synorar2fs --help
 ```
 
 To run this image with your own config provide your config arguments as
@@ -43,9 +43,9 @@ docker run \
   --device /dev/fuse \
   -v <path/to/rar/files>:/source \
   -v <path/to/empty/folder>:/nomorerar \
-  mrdemo007/synorar2fs \
+  jonasandren/synorar2fs \
   <custom rar2fs option> \
   -o <custom fuse option> \
   /source \
-  /destination
+  /nomorerar
 ```

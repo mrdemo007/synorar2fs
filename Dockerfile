@@ -5,7 +5,6 @@ RUN apk add --no-cache --purge -uU --virtual build-deps \
   fuse-dev \
   g++ \
   make \
-  bash \
   tar
 
 ARG RAR_VERSION=5.7.3
@@ -40,6 +39,7 @@ ENV FUSE_THREAD_STACK $FUSE_THREAD_STACK
 
 RUN apk add --no-cache --purge -uU \
   fuse \
+  bash \
   libstdc++
 
 COPY --from=builder /rar2fs/rar2fs /usr/local/bin/rar2fs
